@@ -18,9 +18,11 @@ body {
 #main {
     background-color: lightcoral;
     grid-area: main;
+    margin: 0 10%;
 }
 
 #footer {
     background-color: lawngreen;
     grid-area: footer;
+    margin: 0 10%;
 }
