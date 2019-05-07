@@ -1,0 +1,26 @@
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 80% 10%;
+    grid-template-areas: "header" "main" "footer";
+}
+
+#header {
+    background-color: aqua;
+    grid-area: header;
+}
+
+#main {
+    background-color: lightcoral;
+    grid-area: main;
+}
+
+#footer {
+    background-color: lawngreen;
+    grid-area: footer;
+}
