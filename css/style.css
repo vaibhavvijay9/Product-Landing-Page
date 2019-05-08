@@ -8,7 +8,7 @@ body {
 #grid-container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 10% auto 10%;
+    grid-template-rows: 4rem auto 4rem;
     grid-template-areas: "header" "main" "footer";
 }
 
@@ -22,13 +22,15 @@ body {
 }
 
 #main {
-    background-color: lightcoral;
+    background-color: #C3C3C3;
     grid-area: main;
     margin: 0 10%;
+    padding: 4%;
+    display: grid;
+    justify-items: center;
 }
 
 #footer {
-    background-color: lawngreen;
     grid-area: footer;
     margin: 0 10%;
     background-color: #DDDDDD;
@@ -51,12 +53,55 @@ body {
 
 #navbar-links {
     display: flex;
+    white-space: pre;
+    /* generally we set it to white-space: nowrap; */
 }
 
 .nav-link {
     text-decoration: none;
     color: black;
     padding-left: 7%;
+}
+
+#landing-page-form {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    display: block;
+}
+
+
+/* #form {
+    display: flex;
+    flex-direction: column;
+} */
+
+.feature {
+    display: flex;
+    margin: 5% 5%;
+}
+
+.feature-image {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 4%;
+}
+
+h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+p {
+    padding-top: 1%;
+}
+
+#how-it-works {
+    padding: 2%;
 }
 
 #footer-content {
