@@ -61,7 +61,6 @@ body {
 .nav-link {
     text-decoration: none;
     color: black;
-    padding-left: 7%;
 }
 
 #landing-page-form {
@@ -102,12 +101,16 @@ body {
 } */
 
 #features {
-    padding: 4%;
+    padding: 4% 4% 0;
 }
 
 .feature {
     display: flex;
-    margin: 5% 5%;
+    margin: 0 5% 5%;
+}
+
+div.feature:last-child {
+    margin-bottom: 0;
 }
 
 .feature-image {
@@ -126,7 +129,7 @@ p {
 }
 
 #how-it-works {
-    padding: 2%;
+    padding: 4% 2%;
 }
 
 #pricing {
