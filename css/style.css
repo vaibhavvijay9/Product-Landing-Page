@@ -9,21 +9,22 @@ body {
 #grid-container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 4rem auto 4rem;
+    grid-template-rows: 4rem auto 5rem;
     grid-template-areas: "header" "main" "footer";
 }
 
 #header {
-    background-color: aqua;
+    background-color: #EEEEEE;
     grid-area: header;
     display: flex;
     align-items: center;
-    padding: 0 2%;
+    padding: 1%;
     justify-content: space-between;
+    position: fixed;
 }
 
 #main {
-    background-color: #C3C3C3;
+    background-color: #EEEEEE;
     grid-area: main;
     margin: 0 10%;
     padding: 4% 0;
@@ -38,7 +39,7 @@ body {
 }
 
 #brand-logo {
-    max-width: 25%;
+    max-width: 23%;
 }
 
 #header-img {
@@ -65,62 +66,59 @@ body {
 
 #landing-page-form {
     text-align: center;
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     align-items: center;
+    margin-bottom: 3%;
 }
 
 .heading-and-form {
-    margin: 5% 0;
+    margin-top: 4%;
 }
 
 #email {
     max-width: 275px;
     width: 100%;
-    padding: 2%;
+    padding: 1.2%;
 }
 
 #submit {
     max-width: 150px;
     width: 100%;
     height: 30px;
-    margin: 15px 0;
     border: 0;
+    border-radius: 2px;
     background-color: #f1c40f;
     font-weight: bold;
+    font-size: 1rem;
 }
 
-#submit {
-    display: block;
+#submit:hover {
+    background-color: #FFB52E;
+    cursor: pointer;
 }
-
-
-/* #form {
-    display: flex;
-    flex-direction: column;
-} */
 
 #features {
-    padding: 4% 4% 0;
+    padding: 6% 4% 0;
 }
 
 .feature {
     display: flex;
-    margin: 0 5% 5%;
+    margin: 0 3% 7%;
 }
 
 div.feature:last-child {
-    margin-bottom: 0;
+    margin-bottom: 2%;
 }
 
 .feature-image {
     width: 3rem;
     height: 3rem;
-    margin-right: 4%;
+    margin-right: 7%;
 }
 
 h3 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
@@ -129,7 +127,7 @@ p {
 }
 
 #how-it-works {
-    padding: 4% 2%;
+    padding: 6% 2%;
 }
 
 #pricing {
@@ -143,13 +141,18 @@ p {
     border: 1px solid black;
     border-radius: 2px;
     width: 100%;
-    padding: 2% 4%;
     line-height: 2;
     margin: 0 1.5%;
 }
 
-.card-title {
-    background-color: cyan;
+.pricing-card-title {
+    background-color: #DDDDDD;
+    padding: 0.4rem 0;
+    font-weight: bold;
+}
+
+.pricing-card-content {
+    padding: 4%;
 }
 
 .price-value {
@@ -161,16 +164,22 @@ p {
     max-width: 100px;
     width: 100%;
     height: 35px;
-    margin: 15px 0 0 0;
+    margin-top: 15px;
     border: 0;
+    border-radius: 2px;
     background-color: #f1c40f;
-    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.price-button:hover {
+    background-color: #FFB52E;
+    cursor: pointer;
 }
 
 #footer-content {
     float: right;
-    text-align: right;
-    padding: 1% 1.5%;
+    text-align: center;
+    padding: 2% 1.5%;
 }
 
 .footer-link {
@@ -181,4 +190,9 @@ p {
 
 #footer-links {
     padding-bottom: 3%;
+}
+
+#copyright-text {
+    font-size: 0.9rem;
+    color: #444;
 }
