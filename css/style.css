@@ -201,7 +201,7 @@ p {
 
 /* Media Queries */
 
-@media only screen and (min-width:340px) and (max-width:768px) {
+@media screen and (max-width: 768px) {
     #grid-container {
         grid-template-rows: 6rem auto 5rem;
     }
