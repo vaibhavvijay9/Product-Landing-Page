@@ -197,3 +197,55 @@ p {
     font-size: 0.9rem;
     color: #444;
 }
+
+
+/* Media Queries */
+
+@media only screen and (min-width:340px) and (max-width:768px) {
+    #grid-container {
+        grid-template-rows: 6rem auto 5rem;
+    }
+    #header {
+        flex-direction: column;
+        padding: 3% 0;
+        justify-content: unset;
+        position: sticky;
+    }
+    #brand-logo {
+        max-width: 50%;
+    }
+    #navbar-links {
+        flex-direction: column;
+        white-space: nowrap;
+        align-items: center;
+        padding: 10%;
+    }
+    li {
+        padding-bottom: 5%;
+    }
+    #main {
+        margin: 0;
+    }
+    #features {
+        padding: 6% 2% 0;
+        text-align: center;
+    }
+    .feature {
+        margin: 0 0 8%;
+    }
+    div.feature:last-child {
+        margin-bottom: 2%;
+    }
+    .feature-image {
+        display: none;
+    }
+    #pricing {
+        flex-wrap: wrap;
+    }
+    .pricing-card {
+        margin: 1% 5%;
+    }
+    #footer {
+        margin: 0;
+    }
+}
