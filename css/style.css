@@ -133,7 +133,7 @@ p {
 .videoWrapper {
     float: none;
     clear: both;
-    width: 35rem;
+    width: 40vw;
     position: relative;
     padding-bottom: 56.25%;
     padding-top: 25px;
@@ -260,7 +260,7 @@ p {
         display: none;
     }
     .videoWrapper {
-        width: 24rem;
+        width: 90vw;
     }
     #pricing {
         flex-wrap: wrap;
