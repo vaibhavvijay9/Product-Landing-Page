@@ -56,11 +56,6 @@ body {
     display: block;
 }
 
-
-/* #nav-bar {
-    display: flex;
-} */
-
 #navbar-links {
     display: flex;
     white-space: pre;
@@ -157,7 +152,6 @@ p {
 
 #pricing {
     display: flex;
-    /* flex-wrap: wrap; */
     text-align: center;
     width: 100%;
 }
@@ -230,7 +224,6 @@ p {
         flex-direction: column;
         padding: 3% 0;
         justify-content: unset;
-        position: sticky;
     }
     #brand-logo {
         max-width: 50%;
