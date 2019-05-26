@@ -22,6 +22,7 @@ body {
     padding: 1%;
     justify-content: space-between;
     position: fixed;
+    z-index: 2;
 }
 
 #main {
@@ -37,6 +38,12 @@ body {
     grid-area: footer;
     margin: 0 10%;
     background-color: #DDDDDD;
+    float: right;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0% 1%;
 }
 
 #brand-logo {
@@ -194,20 +201,14 @@ p {
     cursor: pointer;
 }
 
-#footer-content {
-    float: right;
-    text-align: center;
-    padding: 2% 1.5%;
-}
-
 .footer-link {
     text-decoration: none;
     color: black;
-    padding-left: 7%;
+    padding-left: 2%;
 }
 
 #footer-links {
-    padding-bottom: 3%;
+    padding-bottom: 1%;
 }
 
 #copyright-text {
@@ -270,5 +271,6 @@ p {
     }
     #footer {
         margin: 0;
+        padding: 0 5%;
     }
 }
